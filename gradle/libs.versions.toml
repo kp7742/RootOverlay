@@ -1,0 +1,26 @@
+[versions]
+agp = "8.3.2"
+core = "5.2.2"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+librootjava = "1.3.0"
+libsuperuser = "1.1.0.202004101746"
+material = "1.11.0"
+
+[libraries]
+core = { module = "com.github.topjohnwu.libsu:core", version.ref = "core" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+librootjava = { module = "eu.chainfire:librootjava", version.ref = "librootjava" }
+libsuperuser = { module = "eu.chainfire:libsuperuser", version.ref = "libsuperuser" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+service = { module = "com.github.topjohnwu.libsu:service", version.ref = "core" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+
